@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view xmlns="http://jmix.io/schema/flowui/view"
+      title="msg://customSearchView.title">
+
+    <data>
+        <collection id="searchResultItemsDc" class="com.company.jmixpmflowbase.entity.SearchResultItem"/>
+    </data>
+    <layout>
+        <textField id="searchField" datatype="string"/>
+        <dataGrid id="searchResultItemsDataGrid"
+                  dataContainer="searchResultItemsDc"
+                  width="100%">
+            <columns>
+                <column property="entityName"/>
+                <column property="instanceName"/>
+                <column property="instanceId"/>
+                <column property="fields"/>
+            </columns>
+        </dataGrid>
+    </layout>
+</view>

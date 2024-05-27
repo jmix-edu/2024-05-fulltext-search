@@ -36,6 +36,8 @@
             <button id="createBtn" action="projectsDataGrid.create"/>
             <button id="editBtn" action="projectsDataGrid.edit"/>
             <button id="removeBtn" action="projectsDataGrid.remove"/>
+            <button id="indexAllBtn" action="projectsDataGrid.indexAll"/>
+            <button id="indexSelectedBtn" action="projectsDataGrid.indexSelected"/>
             <simplePagination id="pagination" dataLoader="projectsDl"/>
         </hbox>
         <dataGrid id="projectsDataGrid"
@@ -47,6 +49,8 @@
                 <action id="create" type="list_create"/>
                 <action id="edit" type="list_edit"/>
                 <action id="remove" type="list_remove"/>
+                <action id="indexAll" text="Index all"/>
+                <action id="indexSelected" text="Index this project" type="list_itemTracking"/>
             </actions>
             <columns resizable="true">
                 <column property="name"/>
@@ -54,6 +58,7 @@
                 <column property="endDate"/>
                 <column property="status"/>
                 <column property="manager"/>
+                <column property="attachment"/>
             </columns>
         </dataGrid>
         <hbox id="lookupActions" visible="false">

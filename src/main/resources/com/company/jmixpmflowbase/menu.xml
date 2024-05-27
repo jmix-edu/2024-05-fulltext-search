@@ -6,6 +6,8 @@
         <item view="Project.list" title="msg://com.company.jmixpmflowbase.view.project/projectListView.title"/>
         <item view="Task_.list" title="msg://com.company.jmixpmflowbase.view.task/taskListView.title"/>
         <item view="TimeEntry.list" title="msg://com.company.jmixpmflowbase.view.timeentry/timeEntryListView.title"/>
+        <item view="CustomSearchView"
+              title="msg://com.company.jmixpmflowbase.view.customsearch/customSearchView.title"/>
     </menu>
 
 </menu-config>

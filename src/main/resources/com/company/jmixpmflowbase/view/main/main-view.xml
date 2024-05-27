@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <mainView xmlns="http://jmix.io/schema/flowui/main-view"
+          xmlns:search="http://jmix.io/schema/search/ui"
           title="msg://MainView.title">
     <actions>
         <action id="logout" type="logout"/>
@@ -23,6 +24,7 @@
                      classNames="jmix-main-view-navigation"
                      ariaLabel="msg://navigation.ariaLabel">
                     <listMenu id="menu"/>
+                    <search:searchField id="mySearchField" openMode="DIALOG"/>
                 </nav>
                 <footer id="footer" classNames="jmix-main-view-footer">
                     <userIndicator id="userIndicator"/>
